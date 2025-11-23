@@ -100,6 +100,7 @@ classe_prevista = 0 se probabilidade_mudar < 0.5
 
 **a) JSON ausente ou inválido (400 – Bad Request)**
 
+```json
 {
 "error": "JSON não recebido ou Content-Type incorreto. Envie 'Content-Type: application/json'.",
 "expected_fields": [
@@ -111,6 +112,7 @@ classe_prevista = 0 se probabilidade_mudar < 0.5
 "Age"
 ]
 }
+```
 
 css
 Sempre exibir os detalhes
@@ -119,6 +121,7 @@ Copiar código
 
 **b) Campos obrigatórios faltando (400 – Bad Request)**
 
+```json
 {
 "error": "Campos faltando no JSON",
 "expected_fields": [
@@ -133,6 +136,7 @@ Copiar código
 "Age"
 ]
 }
+```
 
 shell
 Sempre exibir os detalhes
@@ -143,6 +147,7 @@ Copiar código
 
 ### 5.1. Via curl
 
+```json
 curl -X POST https://api-gs-2tdspw-ia.onrender.com/predict
 -H "Content-Type: application/json"
 -d '{
@@ -154,6 +159,8 @@ curl -X POST https://api-gs-2tdspw-ia.onrender.com/predict
 "Age": 25
 }'
 
+```
+
 shell
 Sempre exibir os detalhes
 
@@ -161,6 +168,7 @@ Copiar código
 
 ### 5.2. Via JavaScript (fetch)
 
+```json
 fetch("https://api-gs-2tdspw-ia.onrender.com/predict", {
 method: "POST",
 headers: {
@@ -181,3 +189,5 @@ console.log("Classe prevista:", data.classe_prevista);
 console.log("Probabilidade de mudar:", data.probabilidade_mudar);
 })
 .catch(err => console.error(err));
+
+```
