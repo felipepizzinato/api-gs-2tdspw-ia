@@ -167,30 +167,6 @@ curl -X POST https://api-gs-2tdspw-ia.onrender.com/predict
 shell
 Sempre exibir os detalhes
 
-Copiar código
 
-### 5.2. Via JavaScript (fetch)
-
-
-fetch("https://api-gs-2tdspw-ia.onrender.com/predict", {
-method: "POST",
-headers: {
-"Content-Type": "application/json"
-},
-body: JSON.stringify({
-"Job Satisfaction": 8,
-"Salary": 50000,
-"Field of Study (Class)": 3,
-"Current Occupation (Class)": 1,
-"Education Level (Class)": 2,
-"Age": 25
-})
-})
-.then(res => res.json())
-.then(data => {
-console.log("Classe prevista:", data.classe_prevista);
-console.log("Probabilidade de mudar:", data.probabilidade_mudar);
-})
-.catch(err => console.error(err));
 
 
