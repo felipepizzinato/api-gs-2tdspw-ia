@@ -75,10 +75,12 @@ Copiar código
 
 ### 4.1. Resposta de sucesso (200 – OK)
 
+```json
 {
 "classe_prevista": 1,
 "probabilidade_mudar": 0.8233333333333334
 }
+```
 
 makefile
 Sempre exibir os detalhes
@@ -147,19 +149,20 @@ Copiar código
 
 ### 5.1. Via curl
 
-```json
+
 curl -X POST https://api-gs-2tdspw-ia.onrender.com/predict
 -H "Content-Type: application/json"
--d '{
+-d '
+```json{
 "Job Satisfaction": 8,
 "Salary": 50000,
 "Field of Study (Class)": 3,
 "Current Occupation (Class)": 1,
 "Education Level (Class)": 2,
 "Age": 25
-}'
-
+}
 ```
+'
 
 shell
 Sempre exibir os detalhes
@@ -168,7 +171,7 @@ Copiar código
 
 ### 5.2. Via JavaScript (fetch)
 
-```json
+
 fetch("https://api-gs-2tdspw-ia.onrender.com/predict", {
 method: "POST",
 headers: {
@@ -190,4 +193,4 @@ console.log("Probabilidade de mudar:", data.probabilidade_mudar);
 })
 .catch(err => console.error(err));
 
-```
+
