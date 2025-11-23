@@ -55,14 +55,16 @@ Os valores devem ser enviados já codificados conforme a base de treinamento.
 
 **Exemplo de corpo da requisição:**
 
+```json
 {
-"Job Satisfaction": 9,
-"Salary": 20000,
-"Field of Study (Class)": 3,
-"Current Occupation (Class)": 2,
-"Education Level (Class)": 4,
-"Age": 30
+  "Job Satisfaction": 9,
+  "Salary": 20000,
+  "Field of Study (Class)": 3,
+  "Current Occupation (Class)": 2,
+  "Education Level (Class)": 4,
+  "Age": 30
 }
+```
 
 shell
 Sempre exibir os detalhes
