@@ -8,7 +8,7 @@ A API foi implementada em Flask e está hospedada na plataforma Render, permitin
 
 ## 2. URL Base
 
-https://api-gs-2tdspw-ia.onrender.com
+<https://api-gs-2tdspw-ia.onrender.com>
 
 ## 3. Endpoints Disponíveis
 
